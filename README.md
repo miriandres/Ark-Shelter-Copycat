@@ -1,4 +1,5 @@
 # ARK-Shelter Copycat
+![design-desktop](https://user-images.githubusercontent.com/86624207/175660528-5cf0ec2d-7b3f-4d65-bc6b-246f2911c950.png)
 [Ark-Shelter](https://ark-shelter.com/) copycat made with HTML, SCSS and JavaScript.
 
 ## Author ✒️
