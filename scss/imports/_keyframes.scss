@@ -1,0 +1,118 @@
+@keyframes loader {
+    from {
+        transform: scaleY(1);
+    }
+
+    to {
+        transform: scaleY(0);
+    }
+}
+@keyframes loaderLogo {
+    0% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes loaderBox {
+    0% {
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+
+    19% {
+        transform-origin: left;
+    }
+
+    20% {
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+
+    75% {
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+
+    100% {
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+}
+@keyframes loaderBar {
+    0% {
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+
+    14% {
+        transform-origin: left;
+    }
+
+    15% {
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+
+    80% {
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+
+    100% {
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+}
+@keyframes slideRight {
+    0% {
+        transform: translateX(2em);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0em);
+        opacity: 1;
+    }
+}
+@keyframes slideUp {
+    0% {
+        transform: translateY(2em);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0em);
+        opacity: 1;
+    }
+}
+@keyframes slideLabel {
+    0% {
+        transform: translateY(2em) rotate(90deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0em) rotate(90deg);
+        opacity: 1;
+    }
+}
+@keyframes stretchUp {
+    0% {
+        transform-origin: bottom;
+        transform: scaleY(0.25);
+        opacity: 0;
+    }
+    100% {
+        transform-origin: bottom;
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}

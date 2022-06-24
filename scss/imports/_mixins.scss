@@ -1,0 +1,37 @@
+@mixin flex( $dir, $wrap, $just, $align ){
+	display			: flex;
+	flex-flow		: $dir $wrap;
+	justify-content	: $just;
+	@if $wrap == 'nowrap' {
+		align-items		: $align;	
+	}@else{
+		align-content	: $align;
+	}	
+}
+@mixin grid( $repetirC , $grosorC , $gap , $repetirR : initial, $grosorR : initial ){
+	display					: grid;
+	grid-template-columns	: repeat( $repetirC , $grosorC );
+	@if $repetirR != 'initial' {
+		grid-template-rows	: repeat( $repetirR , $grosorR );
+	}
+	gap: $gap;
+}
+
+// Media queries
+$breakpoints: (
+	xs:  380px,  
+	s:   480px,  
+	m:   767px,  
+	l:   1024px,
+	xl:  1164px,
+	xxl: 1423px,
+);
+
+@mixin media( $size ) {
+	@each $device, $sizePx in $breakpoints {
+
+		@if $size == $device {
+			@media screen and(max-width: $sizePx) { @content; }
+		}
+	}
+}

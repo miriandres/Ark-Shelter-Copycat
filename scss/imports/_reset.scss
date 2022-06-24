@@ -1,0 +1,94 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, select,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video , button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+img, picture, video, iframe, figure {
+    display: block;	
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+img, picture {
+    height: 100%;
+}
+a {
+    display: block;
+}
+p a { 
+    display: inline; 
+}
+audio { 
+    display: flex; 
+}
+li {
+    list-style-type: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+h1, h2, h3, h4, h5, h6, p, a, strong, blockquote, i, b, u, em {
+    font-size: 1.125em;
+    font-weight: inherit;
+    font-style: inherit;
+    line-height: 1.85em;
+    text-decoration: none;
+    color:inherit;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+::selection {
+    background-color: var(--c-grey-400);
+    color: var(--white);
+}
+
+form, input, textarea, select, button, label {
+    display: block; 
+    font-family: inherit;
+    font-size: inherit;
+    hyphens: auto;
+    color:inherit;
+    background-color: transparent;
+}
+table, tr, td {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+svg {
+    display: block;
+    width: 100%;
+    fill: currentColor;
+}
+body {
+    font-family: var(--ff-main);
+    font-size: 100%;
+    font-weight: 200;
+    line-height: 1.85em;
+    min-height: 100vh;
+    color: var(--black);
+    background-color: var(--white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+    overflow-x: hidden;
+}
+body.no-scroll {
+    overflow: hidden;
+}

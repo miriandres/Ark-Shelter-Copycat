@@ -1,0 +1,39 @@
+:root{
+    --black         : black;
+    --white         : white;
+    --c-grey-300    : #dcdcdc;
+    --c-grey-400    : #a7a7a7;
+    --c-grey-500    : #9b9b9b;
+    --c-grey-600    : #555c62;
+    --c-slider      : #c9c9c9;
+
+    /* ------------- Fonts ------------- */
+    --ff-main  : 'Circular', sans-serif;
+
+    --fs-h1:  6.5rem;
+    --fs-link: 0.844rem;
+    --fs-number: 1rem;
+    
+    --fs-form: 1.125rem;
+    --fs-subtitle: 1.25rem;
+    --fs-title-s: 1.438rem;
+    --fs-title-m: 1.813rem;
+    --fs-title-l: 2.313rem;
+
+    --lh-s: 0.95em;
+    --lh-m: 1.25em;
+    --lh-l: 1.5em;
+
+    /* ------------- Spacer ------------- */
+
+    --max-width: 1550px;
+
+    --spacer-xxs: 0.25rem;
+    --spacer-xs: 0.5rem;
+    --spacer-s: 1rem;
+    --spacer-m: 2rem;
+    --spacer-l: 4rem;
+    --spacer-xl: 5rem;
+    --spacer-sec-block: 7rem;
+    --spacer-sec-inline: 7rem;
+}

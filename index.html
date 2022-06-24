@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#fff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ark Shelter | Miriandres</title>
+    <meta name="description" content="Ark Shelter Copycat">
+    <meta name="author" content="Miriam Andrés">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@miriandresdev">
+    <meta name="twitter:title" content="Ark Shelter Copycat | Miriandres">
+    <meta name="twitter:description" content="Ark Shelter Copycat">
+    <meta name="twitter:creator" content="@miriandresdev">
+    <meta name="twitter:image:src" content="design/social-preview.png">
+    <meta property="og:title" content="Ark Shelter Copycat | Miriandres" />
+    <meta property="og:url" content="https://miriandres.github.io/Ark-Shelter-Copycat/" />
+    <meta property="og:image" content="design/social-preview.png" />
+    <meta property="og:description" content="Ark Shelter Copycat" />
+    <meta property="og:site_name" content="Ark Shelter Copycat | Miriandres" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/favicon.ico">
+    <link rel="stylesheet" href="css/app.css">
+    <script defer src="js/app.js"></script>
+</head>
+<body>
+    <div class="loader">
+        <svg viewBox="0 0 150 13" class="loader__logo">
+            <path d="M10.1,12L9.2,9.7H3.7L2.7,12h-2.8L5.1,0.1h2.8L13,12H10.1z M4.5,7.5h3.8L6.4,2.9L4.5,7.5z
+            M27.3,12h-3l-1.9-3.4h-2.7V12h-2.7V0.1h5.2c3.1,0,4.9,1.5,4.9,4.1c0,1.8-0.8,3.2-2.2,3.8L27.3,12z M19.6,2.3v4h2.5 c1.5,0,2.3-0.7,2.3-2c0-1.3-0.8-2-2.3-2H19.6z M43,12h-3.2l-3.4-4.8l-1.7,1.9V12h-2.7V0.1h2.7v5.4l4.9-5.4h3.1l-4.5,5L43,12z M46.8,5.9h4.4v1.7h-4.4V5.9z M64,3.5c-1.3-0.7-2.8-1.2-3.7-1.2c-0.9,0-1.5,0.3-1.5,1c0,2.2,6.3,1,6.3,5.3c0,2.3-2,3.6-4.7,3.6 c-2,0-3.9-0.7-5.3-1.9L56.3,8c1.2,1.1,3,1.8,4.2,1.8c1.1,0,1.8-0.4,1.8-1.1c0-2.2-6.3-0.9-6.3-5.2c0-2.2,1.9-3.5,4.6-3.5 c1.7,0,3.3,0.5,4.5,1.3L64,3.5z M69.7,0.1h2.7v5h5.4v-5h2.7V12h-2.7V7.3h-5.4V12h-2.7V0.1z M85.8,0.1h9.1v2.2h-6.4v2.6h5.7v2.2h-5.7 v2.6H95V12h-9.2V0.1z M99.8,0.1h2.7v9.6h5.1V12h-7.8V0.1z M110.7,0.1h9.9v2.3h-3.6V12h-2.7V2.4h-3.6V0.1z M124.8,0.1h9.1v2.2h-6.4 v2.6h5.7v2.2h-5.7v2.6h6.6V12h-9.2V0.1z M149.2,12h-3l-1.9-3.4h-2.7V12h-2.7V0.1h5.2c3.1,0,4.9,1.5,4.9,4.1c0,1.8-0.8,3.2-2.2,3.8 L149.2,12z M141.6,2.3v4h2.5c1.5,0,2.3-0.7,2.3-2c0-1.3-0.9-2-2.3-2H141.6z"></path>
+        </svg>
+        <div class="loader__box"></div>
+        <div class="loader__bar"></div>
+    </div>
+    <header class="header">
+        <a href="index.html" class="header__logo" title="Ark-Shelter">
+            <svg class="header__img" viewBox="0 0 150 13">
+                <path d="M10.1,12L9.2,9.7H3.7L2.7,12h-2.8L5.1,0.1h2.8L13,12H10.1z M4.5,7.5h3.8L6.4,2.9L4.5,7.5z
+                M27.3,12h-3l-1.9-3.4h-2.7V12h-2.7V0.1h5.2c3.1,0,4.9,1.5,4.9,4.1c0,1.8-0.8,3.2-2.2,3.8L27.3,12z M19.6,2.3v4h2.5 c1.5,0,2.3-0.7,2.3-2c0-1.3-0.8-2-2.3-2H19.6z M43,12h-3.2l-3.4-4.8l-1.7,1.9V12h-2.7V0.1h2.7v5.4l4.9-5.4h3.1l-4.5,5L43,12z M46.8,5.9h4.4v1.7h-4.4V5.9z M64,3.5c-1.3-0.7-2.8-1.2-3.7-1.2c-0.9,0-1.5,0.3-1.5,1c0,2.2,6.3,1,6.3,5.3c0,2.3-2,3.6-4.7,3.6 c-2,0-3.9-0.7-5.3-1.9L56.3,8c1.2,1.1,3,1.8,4.2,1.8c1.1,0,1.8-0.4,1.8-1.1c0-2.2-6.3-0.9-6.3-5.2c0-2.2,1.9-3.5,4.6-3.5 c1.7,0,3.3,0.5,4.5,1.3L64,3.5z M69.7,0.1h2.7v5h5.4v-5h2.7V12h-2.7V7.3h-5.4V12h-2.7V0.1z M85.8,0.1h9.1v2.2h-6.4v2.6h5.7v2.2h-5.7 v2.6H95V12h-9.2V0.1z M99.8,0.1h2.7v9.6h5.1V12h-7.8V0.1z M110.7,0.1h9.9v2.3h-3.6V12h-2.7V2.4h-3.6V0.1z M124.8,0.1h9.1v2.2h-6.4 v2.6h5.7v2.2h-5.7v2.6h6.6V12h-9.2V0.1z M149.2,12h-3l-1.9-3.4h-2.7V12h-2.7V0.1h5.2c3.1,0,4.9,1.5,4.9,4.1c0,1.8-0.8,3.2-2.2,3.8 L149.2,12z M141.6,2.3v4h2.5c1.5,0,2.3-0.7,2.3-2c0-1.3-0.9-2-2.3-2H141.6z"></path>
+            </svg>
+        </a>
+        <span class="header__span">Navigation</span>
+        <button class="header__btn" aria-label="Menu" type="button">
+            <svg class="header__svg" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100">
+                <g>
+                    <path class="line line--1" d="M5 22h88v9H5z" />
+                    <path class="line line--2" d="M5 50h88v9H5z" />
+                    <path class="line line--3" d="M5 78h88v9H5z" />
+                </g>
+            </svg>
+        </button>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li class="header__li header__li--mobile"><a href="index.html" class="header__a" title="Home">Home</a></li>
+                <li class="header__li"><a href="#" class="header__a" title="Live">Live</a></li>
+                <li class="header__li"><a href="#" class="header__a" title="Work" >Work</a></li>
+                <li class="header__li"><a href="#" class="header__a" title="Relax">Relax</a></li>
+                <li class="header__li"><a href="#" class="header__a" title="Studio">Studio</a></li>
+                <li class="header__li"><a href="#" class="header__a" title="Gallery">Gallery</a></li>
+                <li class="header__li"><a href="#" class="header__a" title="About">About</a></li>
+                <li class="header__li header__li--mobile"><a href="#" class="header__a" title="Contact">Contact</a></li>
+            </ul>
+        </nav>
+        <ul class="header__right">
+            <li class="header__li"><a href="#" class="header__a header__a--sound" title="Sound">Sound</a></li>
+            <li class="header__li"><a href="#" class="header__a" title="Contact">Contact</a></li>
+        </ul>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <video class="hero__video" muted autoplay loop playsinline>
+                <source src="assets/video/home.mp4" type="video/mp4">
+            </video>
+            <div class="wrapper">
+                <button class="button hero__btn" type="button">
+                    <svg class="button__svg button__close" viewBox="0 0 20 20" aria-hidden="true">
+                        <path d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"></path>
+                    </svg>
+                    <span class="button__span">Check out our feature on the news</span>
+                    <svg class="button__svg button__arrow" viewBox="0 0 61.5 61.5" aria-hidden="true">
+                        <polygon points="42.5,16.1 40.8,17.9 51.2,29 3.8,29 3.8,31.5 51.2,31.5 41,42.3 42.7,44.1 55.8,30.3 "></polygon>
+                    </svg>
+                </button>
+                <h1 class="hero__h1">
+                    <span class="hero__display">New way</span> 
+                    <span class="hero__display">of living.</span>
+                </h1>
+                <p class="hero__tagline title-s">Change the way you live life, closer to nature.</p>
+            </div>
+            <ul class="hero__ul">
+                <li class="hero__li">
+                    <a href="" class="link__a">
+                        <p class="hero__number">Nr. 01</p>
+                        <p class="hero__title title-s">
+                            <span class="hero__span">Live in ark</span> 
+                            <svg viewBox="0 -15 61.5 61.5" class="hero__arrow"><polygon points="42.5,16.1 40.8,17.9 51.2,29 3.8,29 3.8,31.5 51.2,31.5 41,42.3 42.7,44.1 55.8,30.3 "></polygon></svg>
+                        </p>
+                        <p class="hero__p subtitle">Learn more about arks to live in</p>
+                    </a>
+                </li>
+                <li class="hero__li">
+                    <a href="" class="link__a">
+                        <p class="hero__number">Nr. 02</p>
+                        <p class="hero__title title-s">
+                            <span class="hero__span">Work in an ark</span>
+                            <svg viewBox="0 -15 61.5 61.5" class="hero__arrow"><polygon points="42.5,16.1 40.8,17.9 51.2,29 3.8,29 3.8,31.5 51.2,31.5 41,42.3 42.7,44.1 55.8,30.3 "></polygon></svg>
+                        </p>
+                        <p class="hero__p subtitle">Learn more about office arks</p>
+                    </a>
+                </li>
+                <li class="hero__li">
+                    <a href="" class="link__a">
+                        <p class="hero__number">Nr. 03</p>
+                        <p class="hero__title title-s">
+                            <span class="hero__span">Relax in an ark</span>
+                            <svg viewBox="0 -15 61.5 61.5" class="hero__arrow"><polygon points="42.5,16.1 40.8,17.9 51.2,29 3.8,29 3.8,31.5 51.2,31.5 41,42.3 42.7,44.1 55.8,30.3 "></polygon></svg>
+                        </p>
+                        <p class="hero__p subtitle">Learn more about arks at home</p>
+                    </a>
+                </li>
+            </ul>
+            <p class="hero__label">Modular, sustainable, premium.</p>
+        </section>
+
+        <section class="what section">
+            <ul class="section__ul">
+                <li class="section__li">
+                    <p class="section__p">Nr. 01</p>
+                </li>
+                <li class="section__li">
+                    <p class="section__p">Our philosophy for arks</p>
+                </li>
+                <li class="section__li section__li--hide">
+                    <p class="section__p">Back to nature</p>
+                </li>
+            </ul>
+
+            <p class="title-m">What's Ark-Shelter?</p>
+            <article class="what__article">
+                <h2 class="what__h2 title-l">Ark-Shelters are prefabricated, fully finished, modular units. By a lake, deep in a forest, at the edge of a field, a steep mountain hill or your city rooftop! Make your dream come true, installed in one day, no extra on-site work.</h2>
+                <p class="what__p">The shelters are built in one piece, which gives the incredible mobility to reach your dream location. Modularity ensures that over time you can grow your Ark to your needs. The units are created by craftsmen in our factory.</p>
+                <p class="what__p">We have ideal conditions and are able to reach the highest details and reduce production time. Which allows us to keep control of the price, remove any onsite construction constraints and make your dream home, on time, on budget, at the highest quality possible.</p>
+
+                <p class="title-link">Choose your purpose</p>
+                <ul class="link">
+                    <li class="link__li"><a href="" title="Ark-Shelter to live closer to nature" class="link__a"><span class="link__span">Ark-Shelter to live closer to nature</span></a></li>
+                    <li class="link__li"><a href="" title="Ark-Shelter as an office" class="link__a"><span class="link__span">Ark-Shelter as an office</span></a></li>
+                    <li class="link__li"><a href="" title="Ark-Shelter to relax in at home" class="link__a"><span class="link__span">Ark-Shelter to relax in at home</span></a></li>
+                </ul>
+            </article>
+        </section>
+
+        <div class="around">
+            <a href="#" title="Look around in the ark-shelter" class="around__btn">Look around in the ark-shelter</a>
+            <div class="around__parallax"></div>
+            <p class="title-link">Visit our website on a bigger screen to enjoy a virtual tour on an ark.</p>
+        </div>
+    
+        <section class="why section">
+            <ul class="section__ul">
+                <li class="section__li">
+                    <p class="section__p">Nr. 02</p>
+                </li>
+                <li class="section__li">
+                    <p class="section__p">Why Ark-Shelter?</p>
+                </li>
+                <li class="section__li section__li--hide">
+                    <p class="section__p">Back to nature</p>
+                </li>
+            </ul>
+
+            <ul class="why__ul">
+                <li class="why__li">
+                    <h3 class="why__h3 title-s">Find a space to unwind</h3>
+                    <p class="why__p">Ark-Shelter shows the beauty of natural light and allows you to reconnect with nature. The large single pane windows seamlessly integrate the natural environment within your Ark. Enjoy a moment for yourself and take time to unwind.</p>
+                </li>
+                <li class="why__li">
+                    <h3 class="why__h3 title-s">Connect with nature</h3>
+                    <p class="why__p">Due to Ark-Shelter’s self-sufficient system and ecological materials, you’ll live with zero-impact. Become as productive as nature itself, and grow and bloom within your own Ark.</p>
+                </li>
+                <li class="why__li">
+                    <p class="title-link">Need more info?</p>
+                    <ul class="link">
+                        <li class="link__li"><a href="" title="Download our brochure" class="link__a"><span class="link__span">Download our brochure</span></a></li>
+                        <li class="link__li"><a href="" title="Ask us your questions" class="link__a"><span class="link__span">Ask us your questions</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <picture class="why__picture">
+                <source srcset="assets/home-01.webp" type="image/webp">
+                <img src="assets/home-01.jpg" alt="Ark-Shelter built in a foggy pine forest" class="why__img" loading="lazy" decoding="async">
+            </picture>
+        </section>
+
+        <div class="slider">
+            <ul class="slider__ul">
+                <li class="slider__li">
+                    <picture class="slider__picture">
+                        <source srcset="assets/slider-01.webp" type="image/webp">
+                        <img src="assets/slider-01.jpg" alt="Ark-Shelter" class="slider__img" loading="lazy" decoding="async">
+                    </picture>
+                </li>
+                <li class="slider__li">
+                    <picture class="slider__picture">
+                        <source srcset="assets/slider-02.webp" type="image/webp">
+                        <img src="assets/slider-02.jpg" alt="Ark-Shelter" class="slider__img" loading="lazy" decoding="async">
+                    </picture>
+                </li>
+                <li class="slider__li">
+                    <picture class="slider__picture">
+                        <source srcset="assets/slider-03.webp" type="image/webp">
+                        <img src="assets/slider-03.jpg" alt="Ark-Shelter" class="slider__img" loading="lazy" decoding="async">
+                    </picture>
+                </li>
+                <li class="slider__li">
+                    <picture class="slider__picture">
+                        <source srcset="assets/slider-04.webp" type="image/webp">
+                        <img src="assets/slider-04.jpg" alt="Ark-Shelter" class="slider__img" loading="lazy" decoding="async">
+                    </picture>
+                </li>
+                <li class="slider__li">
+                    <picture class="slider__picture">
+                        <source srcset="assets/slider-05.webp" type="image/webp">
+                        <img src="assets/slider-05.jpg" alt="Ark-Shelter" class="slider__img" loading="lazy" decoding="async">
+                    </picture>
+                </li>
+                <li class="slider__li">
+                    <picture class="slider__picture">
+                        <source srcset="assets/slider-06.webp" type="image/webp">
+                        <img src="assets/slider-06.jpg" alt="Ark-Shelter" class="slider__img" loading="lazy" decoding="async">
+                    </picture>
+                </li>
+                <li class="slider__li">
+                    <picture class="slider__picture">
+                        <source srcset="assets/slider-07.webp" type="image/webp">
+                        <img src="assets/slider-07.jpg" alt="Ark-Shelter" class="slider__img" loading="lazy" decoding="async">
+                    </picture>
+                </li>
+            </ul>
+            <div class="slider__progress">
+                <span class="slider__bar"></span>
+            </div>
+        </div>
+
+        <section class="about section">
+            <ul class="section__ul">
+                <li class="section__li">
+                    <p class="section__p">Nr. 03</p>
+                </li>
+                <li class="section__li">
+                    <p class="section__p">About Ark-Shelter</p>
+                </li>
+                <li class="section__li section__li--hide">
+                    <p class="section__p">Back to nature</p>
+                </li>
+            </ul>
+
+            <h2 class="about__h2 title-l">Our Arks are manufactured by carefully selected and trained craftsmen. The high-quality wood we use for the base structure is durable and designed to be resistant in any environment.</h2>
+
+            <ul class="link">
+                <li class="link__li"><a href="" title="Download our brochure" class="link__a"><span class="link__span">More about Ark-Shelter</span></a></li>
+            </ul>
+
+            <div class="about__container">
+                <video class="about__video" title="The story about how ark-shelter was created" preload="metadata" poster="assets/video-homepage-small.webp" playsinline>
+                    <source src="assets/video/story-video.mp4" type="video/mp4">
+                </video>
+                <a href="" title="Play video" class="play"><svg class="play__svg" viewBox="0 0 8 11"><path d="M1.5,0.2l6.1,4.6c0.5,0.4,0.5,1.1,0,1.5l-6.1,4.6c-0.6,0.5-1.5,0-1.5-0.7V0.9C0,0.2,0.9-0.3,1.5,0.2"></path></svg></a>
+            </div>
+
+            <article class="about__article">
+                <h3 class="about__h3 title-link">The story about how ark-shelter was created</h3>
+                <p class="about__p">Ark-Shelter began with one question: how will people live in the future? Architecture students Michiel and Martin came up with the first concept of the Ark-Shelter, a compact house with a clean design. It’s a reinvention of how people live their lives in today’s fast paced and busy world by going back to nature and back to basics. The concept has one purpose, allow people to come to themselves, reconnect with nature and reconnect with themselves.</p>
+            </article>
+        </section>
+
+        <div class="install">
+            <div class="install__container">
+                <video class="install__video" title="Ark installation video for Boostmoodshop" preload="metadata" poster="assets/home-installing-cover.webp" playsinline>
+                    <source src="assets/video/installation-video.mp4" type="video/mp4">
+                </video>
+                <a href="#" title="Play video" class="play"><svg class="play__svg" viewBox="0 0 8 11"><path d="M1.5,0.2l6.1,4.6c0.5,0.4,0.5,1.1,0,1.5l-6.1,4.6c-0.6,0.5-1.5,0-1.5-0.7V0.9C0,0.2,0.9-0.3,1.5,0.2"></path></svg></a>
+            </div>
+            <ul class="install__ul">
+                <li class="install__li">
+                    <p class="title-s">Take a look at how we installed this Ark-Shelter</p>
+                    <p class="install__p subtitle">Curious to see how we install Arks? Watch the video.</p>
+                </li>
+                <li class="install__li">
+                    <p class="title-s">Placed for</p>
+                    <p class="install__p subtitle">Boostmoodshop</p>
+                </li>
+            </ul>
+        </div>
+
+        <section class="care section">
+            <ul class="section__ul">
+                <li class="section__li">
+                    <p class="section__p">Nr. 04</p>
+                </li>
+                <li class="section__li">
+                    <p class="section__p">We care about mother nature</p>
+                </li>
+                <li class="section__li section__li--hide">
+                    <p class="section__p">Back to nature</p>
+                </li>
+            </ul>
+
+            <article class="care__article">
+                <h4 class="care__h4 title-l">It has never been more important to care about mother nature.</h4>
+                <p class="care__p">Our shelters are handcrafted using durable materials to ensure a long life span. They are placed on ground screws to leave nature untouched. Shelters can be built with renewable resources, such as solar energy and rain water. Our goal is to sustain a mutually beneficial relationship with our natural environment.</p>
+                <ul class="link">
+                    <li class="link__li"><a href="" title="More about Ark-Shelter" class="link__a"><span class="link__span">More about Ark-Shelter</span></a></li>
+                </ul>
+            </article>
+
+            <picture class="care__picture">
+                <source srcset="assets/home-02.webp" type="image/webp">
+                <img src="assets/home-02.jpg" alt="Ark-Shelter built in a grass plane, with solar panels in the roof" class="care__img" loading="lazy" decoding="async">
+            </picture>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="wrapper section">
+            <div class="footer__row">
+                <dl class="footer__dl">
+                    <dt class="title-s">Sitemap</dt>
+                    <dd class="footer__dd">
+                        <a href="#" title="Home" class="footer__a">Home</a>
+                    </dd>
+                    <dd class="footer__dd">
+                        <a href="#" title="Live" class="footer__a">Live</a>
+                    </dd>
+                    <dd class="footer__dd">
+                        <a href="#" title="Work" class="footer__a">Work</a>
+                    </dd>
+                    <dd class="footer__dd">
+                        <a href="#" title="Relax" class="footer__a">Relax</a>
+                    </dd>
+                    <dd class="footer__dd">
+                        <a href="#" title="Studio" class="footer__a">Studio</a>
+                    </dd>
+                    <dd class="footer__dd">
+                        <a href="#" title="Gallery" class="footer__a">Gallery</a>
+                    </dd>
+                    <dd class="footer__dd">
+                        <a href="#" title="About" class="footer__a">About</a>
+                    </dd>
+                    <dd class="footer__dd">
+                        <a href="#" title="Contact" class="footer__a">Contact</a>
+                    </dd>
+                </dl>
+                <dl class="footer__dl">
+                    <dt class="title-s">Information</dt>
+                    <dd class="footer__dd">
+                        <a href="#" title="FAQ" class="footer__a">FAQ</a>
+                    </dd>
+                    <dd class="footer__dd">
+                        <a href="#" title="Privacy Policy" class="footer__a">Privacy Policy</a>
+                    </dd>
+                </dl>
+                <dl class="footer__dl">
+                    <dt class="title-s">Join our newsletter</dt>
+                    <dd class="footer__dd">
+                        <p class="footer__p">We will send you updates on new products and discounts</p>
+                        <form class="footer__form" action="#" method="post">
+                            <input class="footer__input" type="text" title="email" placeholder="Email">
+                            <input class="footer__submit title-s" type="submit" value="Go">
+                        </form>
+                        <img class="footer__img" src="assets/reddot-winner.png" alt="Reddot Winner 2020">
+                    </dd>
+                </dl>
+            </div>
+            <div class="footer__copy">
+                <p class="footer__p">Copyright © Ark-Shelter 2018</p>
+                <p class="footer__p">Website by Ollie</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
