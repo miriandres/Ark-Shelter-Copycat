@@ -13,12 +13,13 @@ const loader   = document.querySelector(".loader");
 
 loader.addEventListener("animationend", ()=>{
   navLi.forEach((element, i)=>{
-    navLi[i].classList.add('slideRight')
+    navLi[i].classList.add("slideRight");
 
     setTimeout(() => {
       navLi[i].classList.remove("slideRight");
     }, 4500);
   })
+  body.classList.remove("no-scroll");
 })
 
 navBtn.addEventListener("click", () => {
